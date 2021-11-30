@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #16222af5, #3a6073fb);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.glassy {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	width: 96vw;
+	height: 92vh;
+	background: #000;
+	border-radius: 20px;
+	background: rgba(27, 50, 56, 0.226);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.349);
+	backdrop-filter: blur(4px) !important;
+	-webkit-backdrop-filter: blur(10px);
+	/* border: 2px solid rgba(21, 67, 78, 0.76); */
+	overflow: hidden;
+	z-index: 555;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@-moz-document url-prefix() {
+	.container {
+		background: linear-gradient(to right, #16222af5, #3a6073fb);
+		border: 0px solid;
+	}
+	.glassy {
+		background: rgba(15, 59, 70, 0.725);
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*-------------------------------------
+    SideBar Styles
+---------------------------------------*/
+.sidebar {
+	background: rgba(6, 34, 41, 0.493);
+	border-right: 2px solid rgba(21, 67, 78, 0.966);
+	text-align: center;
+	padding: 50px 0;
+	/* overflow: scroll; */
+	scrollbar-width: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* .sidebar::-webkit-scrollbar {
+	display: none;
+} */
+.sidebar * {
+	color: #ffffff;
+}
+.name,
+.designation {
+	color: #e67e22;
+	text-shadow: 0 0 10px #642e279c;
 }
 
-.App-link {
-  color: #61dafb;
+.social ul {
+	list-style: none;
+	margin: 20px auto;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social ul li a {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+/*-------------------------------------
+    SideBar Styles End
+---------------------------------------*/
+
+/*-------------------------------------
+    Main Section Styles
+---------------------------------------*/
+.main-content {
+	padding: 30px 0;
+	color: #fafafaec;
+}
+
+.navbar {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.267);
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	justify-content: right;
+	align-items: center;
+	height: 100%;
+	padding: 0 20px;
+}
+.navbar ul li a {
+	color: rgba(255, 255, 255, 0.541);
+	font-size: 1.3rem;
+	padding: 0 15px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.navbar ul li:hover a {
+	color: #fafafa;
+}
+.active {
+	color: #fafafa !important;
+}
+
+.content {
+	overflow: scroll;
+	height: 75vh;
+	scrollbar-width: none;
+	padding: 0 40px;
+	margin: 20px 0;
+}
+
+.content::-webkit-scrollbar {
+	display: none;
+}
+
+.resume_btn {
+	display: inline-block;
+	margin: 0 40px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 20px;
+	background: #d35400;
+}
+.introduce {
+	width: 60%;
+	font-size: 1.3rem;
+	text-align: justify;
+	border-left: 3px solid #d35400ab;
+	padding: 20px;
+	border-radius: 5px;
+}
+.skills-container {
+	margin-top: 40px;
+}
+.skills {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+}
+.skills li {
+	padding: 10px 25px;
+	background: rgba(0, 0, 0, 0.233);
+	margin: 5px;
+	border-radius: 20px;
 }

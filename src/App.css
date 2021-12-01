@@ -62,8 +62,8 @@ body {
 }
 .name,
 .designation {
-	color: #e67e22;
-	text-shadow: 0 0 10px #642e279c;
+	color: #fafafa;
+	text-shadow: 0 0 10px #642e27e8;
 }
 
 .social ul {
@@ -123,6 +123,14 @@ body {
 }
 .active {
 	color: #fafafa !important;
+}
+.active::before {
+	content: '< ';
+	color: #ff6600;
+}
+.active::after {
+	content: ' />';
+	color: #ff6600;
 }
 
 .content {
@@ -279,4 +287,34 @@ button:hover {
 	form {
 		width: 60%;
 	}
+}
+
+/* Projects Page */
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+.project {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.project .image {
+	height: 250px;
+	width: 100%;
+	background: #000;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project .info {
+	padding: 10px;
+}
+.project .info p {
+	margin: 0;
 }

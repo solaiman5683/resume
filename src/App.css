@@ -48,15 +48,15 @@ body {
 	border-right: 2px solid rgba(21, 67, 78, 0.966);
 	text-align: center;
 	padding: 50px 0;
-	/* overflow: scroll; */
+	overflow: scroll;
 	scrollbar-width: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-/* .sidebar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 	display: none;
-} */
+}
 .sidebar * {
 	color: #ffffff;
 }
@@ -171,4 +171,112 @@ body {
 	background: rgba(0, 0, 0, 0.233);
 	margin: 5px;
 	border-radius: 20px;
+}
+
+/* Contact Form */
+.contact {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* .contact h1 {
+	color: #333;
+} */
+form {
+	position: relative;
+	width: 80%;
+	border-radius: 30px;
+	background: rgba(24, 37, 48, 0.473);
+}
+.form-left-decoration,
+.form-right-decoration {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	border-radius: 20px;
+	background: #d35400;
+}
+.form-left-decoration {
+	bottom: 60px;
+	left: -30px;
+}
+.form-right-decoration {
+	top: 60px;
+	right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 0.61);
+}
+.form-left-decoration:before {
+	top: -20px;
+}
+.form-left-decoration:after {
+	top: 20px;
+	left: 10px;
+}
+.form-right-decoration:before {
+	top: -20px;
+	right: 0;
+}
+.form-right-decoration:after {
+	top: 20px;
+	right: 10px;
+}
+.circle {
+	position: absolute;
+	bottom: 80px;
+	left: -55px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.993);
+}
+.form-inner {
+	padding: 40px;
+}
+.form-inner input,
+.form-inner textarea {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #72717186;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.form-inner textarea {
+	resize: none;
+}
+button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid #d35400;
+	background: #d35400;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+}
+button:hover {
+	background: #e96207;
+}
+@media (min-width: 568px) {
+	form {
+		width: 60%;
+	}
 }

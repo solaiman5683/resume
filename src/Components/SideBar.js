@@ -10,7 +10,9 @@ const SideBar = () => {
 					width='300'
 				/>
 				<h1 className='name'>Md. Sulaiman Hosain</h1>
-				<p className='designation'>Full Stack Web Developer</p>
+				<h3 className='designation'>Full Stack Web Developer</h3>
+				<p className='designation'>Email: solaiman.sh6@gmail.com</p>
+				<p className='designation'>Mobile: +8801631838086</p>
 			</div>
 			<div className='social'>
 				<ul>

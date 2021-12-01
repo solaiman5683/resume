@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.container {
+.main-container {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
@@ -24,20 +24,10 @@ body {
 	background: rgba(27, 50, 56, 0.226);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.349);
 	backdrop-filter: blur(4px) !important;
-	-webkit-backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(5px);
 	/* border: 2px solid rgba(21, 67, 78, 0.76); */
 	overflow: hidden;
 	z-index: 555;
-}
-
-@-moz-document url-prefix() {
-	.container {
-		background: linear-gradient(to right, #16222af5, #3a6073fb);
-		border: 0px solid;
-	}
-	.glassy {
-		background: rgba(15, 59, 70, 0.725);
-	}
 }
 
 /*-------------------------------------
@@ -148,12 +138,15 @@ body {
 .resume_btn {
 	display: inline-block;
 	margin: 0 40px;
-	color: #fff;
+	color: rgba(255, 254, 254, 0.856);
 	text-decoration: none;
 	font-weight: bold;
 	padding: 10px 30px;
 	border-radius: 20px;
 	background: #d35400;
+}
+.resume_btn:hover {
+	color: #fff;
 }
 .introduce {
 	width: 60%;
@@ -267,20 +260,16 @@ form {
 .form-inner textarea {
 	resize: none;
 }
-button {
-	width: 100%;
-	padding: 10px;
+.btn-warning {
+	padding: 10px 40px !important;
 	margin-top: 20px;
-	border-radius: 20px;
-	border: none;
-	border-bottom: 4px solid #d35400;
-	background: #d35400;
+	border: none !important;
+	background: #d35400 !important;
 	font-size: 16px;
-	font-weight: 400;
-	color: #fff;
 	cursor: pointer;
+	color: #fff !important;
 }
-button:hover {
+.btn-warning:hover {
 	background: #e96207;
 }
 @media (min-width: 568px) {
@@ -317,4 +306,24 @@ button:hover {
 }
 .project .info p {
 	margin: 0;
+}
+.modal-content {
+	background-color: #1c384380 !important;
+	color: #fff;
+	box-shadow: 0 0 10px #1c3843;
+	border: none !important;
+	backdrop-filter: blur(15px) !important;
+	-webkit-backdrop-filter: blur(15px);
+}
+@-moz-document url-prefix() {
+	.container {
+		background: linear-gradient(to right, #16222af5, #3a6073fb);
+		border: 0px solid;
+	}
+	.glassy {
+		background: rgba(15, 59, 70, 0.725);
+	}
+	.modal-content {
+		background-color: #1c3843ea !important;
+	}
 }

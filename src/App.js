@@ -11,7 +11,7 @@ function App() {
 	return (
 		<>
 			<ParticleBG />
-			<div className='container'>
+			<div className='main-container'>
 				<div className='glassy'>
 					<SideBar />
 					<div className='main-content'>

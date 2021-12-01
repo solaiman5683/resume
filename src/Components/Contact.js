@@ -46,7 +46,10 @@ const Contact = () => {
 						placeholder='Your Message...'
 						name='message'
 						rows='5'></textarea>
-					<button type='submit' href='/'>
+					<button
+						type='submit'
+						href='/'
+						class='btn btn-warning rounded-pill text-light fs-5'>
 						Submit
 					</button>
 				</div>

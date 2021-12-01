@@ -12,7 +12,7 @@ const Projects = () => {
 	}, []);
 	return (
 		<div>
-			<h1>My Projects</h1>
+			<h1 className='my-5'>My Projects</h1>
 			<div className='projects-container'>
 				{projects?.map(project => (
 					<Project data={project} />

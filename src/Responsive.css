@@ -1,0 +1,76 @@
+@media screen and (min-width: 1123px) and (max-width: 1400px) {
+	.sidebar {
+		width: 40%;
+	}
+	.main-content {
+		width: 60%;
+	}
+	.introduce {
+		width: 90%;
+		font-size: 1.2rem;
+	}
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	form {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1123px) {
+	.glassy {
+		flex-direction: column;
+		overflow: scroll;
+		scrollbar-width: none;
+	}
+	.sidebar {
+		width: 100%;
+		overflow: visible;
+		height: 100%;
+	}
+	.main-content {
+		width: 100%;
+		height: 100%;
+	}
+	.introduce {
+		width: 80%;
+		font-size: 1.2rem;
+	}
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	form {
+		width: 80%;
+	}
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 767px) {
+	.glassy {
+		flex-direction: column;
+		overflow: scroll;
+		scrollbar-width: none;
+	}
+	.sidebar {
+		width: 100%;
+		overflow: visible;
+		height: 100%;
+	}
+	.main-content {
+		width: 100%;
+		height: 100%;
+	}
+	.introduce {
+		width: 90%;
+		font-size: 1.2rem;
+	}
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	form {
+		width: 90%;
+	}
+	.projects-container {
+		grid-template-columns: 1fr;
+	}
+}

@@ -15,8 +15,7 @@ body {
 }
 
 .glassy {
-	display: grid;
-	grid-template-columns: 30% 70%;
+	display: flex;
 	width: 96vw;
 	height: 92vh;
 	background: #000;
@@ -29,7 +28,9 @@ body {
 	overflow: hidden;
 	z-index: 555;
 }
-
+ul {
+	margin: 0 !important;
+}
 /*-------------------------------------
     SideBar Styles
 ---------------------------------------*/
@@ -37,12 +38,14 @@ body {
 	background: rgba(6, 34, 41, 0.493);
 	border-right: 2px solid rgba(21, 67, 78, 0.966);
 	text-align: center;
-	padding: 50px 0;
+	padding: 10px 0;
+	display: flex;
 	overflow: scroll;
 	scrollbar-width: none;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 30%;
+	height: 100%;
 }
 .sidebar::-webkit-scrollbar {
 	display: none;
@@ -80,31 +83,29 @@ body {
     Main Section Styles
 ---------------------------------------*/
 .main-content {
+	width: 70%;
 	padding: 30px 0;
 	color: #fafafaec;
 }
 
 .navbar {
-	height: 80px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.267);
+	justify-content: right !important;
 }
 
 .navbar ul {
 	display: flex;
 	list-style: none;
-	justify-content: right;
-	align-items: center;
 	height: 100%;
-	padding: 0 20px;
+	padding: 15px;
+	margin: 0;
 }
 .navbar ul li a {
 	color: rgba(255, 255, 255, 0.541);
 	font-size: 1.3rem;
-	padding: 0 15px;
+	padding-right: 15px;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -127,8 +128,8 @@ body {
 	overflow: scroll;
 	height: 75vh;
 	scrollbar-width: none;
-	padding: 0 40px;
-	margin: 20px 0;
+	padding: 0 40px 40px 40px;
+	margin: 20px 0 0 0;
 }
 
 .content::-webkit-scrollbar {

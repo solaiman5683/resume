@@ -13,6 +13,13 @@ const SideBar = () => {
 				<h3 className='designation'>Full Stack Web Developer</h3>
 				<p className='designation'>Email: solaiman.sh6@gmail.com</p>
 				<p className='designation'>Mobile: +8801631838086</p>
+				<a
+					className='resume_btn'
+					href='https://drive.google.com/uc?export=download&id=1_Z45_q2M_x0SHz-BokD1zdbcYGUZIYO2'
+					target='_blank'
+					rel='noreferrer'>
+					Download Resume <i className='fad fa-chevron-double-down'></i>
+				</a>
 			</div>
 			<div className='social'>
 				<ul>

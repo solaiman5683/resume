@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import './Responsive.css';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Navbar from './Components/Navbar';

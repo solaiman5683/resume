@@ -19,10 +19,13 @@ const About = () => {
 			<p className='introduce'>
 				I am a professional web developer, enthusiastic, and keen to contribute
 				to the team's success through hard work, attention to detail, and
-				excellent organizational skills. I'm Motivated to learn, and grow in
-				technology-related fields. I have a clear understanding of coding and
-				web development. Recently I've completed a 6month web development Course
-				from a well known Institute called Programming Hero. 😀
+				excellent organizational skills.
+				<br />
+				<br />
+				I'm Motivated to learn, and grow in technology-related fields. I have a
+				clear understanding of coding and web development. Recently I've
+				completed a 6month web development Course from a well known Institute
+				called Programming Hero. 😀
 			</p>
 			<div className='skills-container'>
 				<h2>My Skills</h2>

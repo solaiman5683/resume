@@ -47,7 +47,48 @@ function MyVerticallyCenteredModal(props) {
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<img src={data.picture} alt='' width='100%' />
+				<a
+					href={data.picture}
+					title='See Full Size Image'
+					target='_blank'
+					rel='noreferrer'>
+					<img
+						src={data.picture}
+						alt=''
+						className='rounded shadow'
+						width='100%'
+					/>
+				</a>
+				<div className='row my-4 align-items-center'>
+					<div className='col-md-6'>
+						<a
+							href={data.image2}
+							title='See Full Size Image'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								src={data.image2}
+								alt=''
+								className='rounded shadow'
+								width='100%'
+							/>
+						</a>
+					</div>
+					<div className='col-md-6'>
+						<a
+							href={data.image3}
+							title='See Full Size Image'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								src={data.image3}
+								alt=''
+								className='rounded shadow'
+								width='100%'
+							/>
+						</a>
+					</div>
+				</div>
 				<h5 className='my-3'>{data.shortDes}</h5>
 				<a href={data.liveLink} className='btn btn-warning me-4 rounded-pill'>
 					Live Site

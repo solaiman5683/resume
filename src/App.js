@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar';
 import Projects from './Components/Projects';
 import SideBar from './Components/SideBar';
 import ParticleBG from './ParticleBG';
+import Blogs from './Components/Blogs';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 								<Route path='/about' element={<About />} />
 								<Route path='/contact' element={<Contact />} />
 								<Route path='/projects' element={<Projects />} />
+								<Route path='/blogs' element={<Blogs />} />
 							</Routes>
 						</div>
 					</div>

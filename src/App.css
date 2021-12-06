@@ -28,6 +28,9 @@ body {
 	overflow: hidden;
 	z-index: 555;
 }
+.glassy::-webkit-scrollbar {
+	display: none;
+}
 ul {
 	margin: 0 !important;
 }
@@ -327,4 +330,8 @@ form {
 	.modal-content {
 		background-color: #1c3843ea !important;
 	}
+}
+.btn-close {
+	background: transparent url('https://monnampo.sirv.com/Images/close.svg')
+		center/1em auto no-repeat !important;
 }

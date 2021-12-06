@@ -20,6 +20,11 @@ const Navbar = () => {
 						Projects
 					</NavLink>
 				</li>
+				<li>
+					<NavLink to='/blogs' activeClassName='active'>
+						Blogs
+					</NavLink>
+				</li>
 			</ul>
 		</div>
 	);

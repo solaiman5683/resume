@@ -61,7 +61,7 @@
 		height: 100%;
 	}
 	.introduce {
-		width: 90%;
+		width: 100%;
 		font-size: 1.2rem;
 	}
 	.projects-container {
@@ -72,5 +72,29 @@
 	}
 	.projects-container {
 		grid-template-columns: 1fr;
+	}
+	.navbar {
+		justify-content: center !important;
+	}
+	.navbar ul li a {
+		font-size: 1rem;
+	}
+	.content span {
+		font-size: 1.4rem;
+	}
+	.skills {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.skills li {
+		padding: 10px 15px;
+		background: rgba(0, 0, 0, 0.233);
+		margin: 5px;
+		border-radius: 20px;
+		font-size: 12px;
 	}
 }

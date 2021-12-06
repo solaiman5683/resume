@@ -50,7 +50,7 @@ const Contact = () => {
 						type='submit'
 						href='/'
 						class='btn btn-warning rounded-pill text-light fs-5'>
-						Submit
+						Send me a Message
 					</button>
 				</div>
 			</form>
